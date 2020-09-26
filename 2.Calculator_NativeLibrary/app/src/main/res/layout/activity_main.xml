@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/answertextfield"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginBottom="260dp"
+        android:fontFamily="casual"
+        android:text="@string/answer"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="36sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button8"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+    <EditText
+        android:id="@+id/num1textedit"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/number1"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/num2textedit"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="97dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="monospace"
+        android:hint="@string/number2"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:textSize="24sp"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1textedit" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="@string/call_jni_funcion"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num2textedit" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/num2textedit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/num1textedit">
+
+
+        <RadioButton
+            android:id="@+id/rbadd"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="@string/add"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbsub"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="@string/sub"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbdiv"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="@string/div"
+            android:textSize="18sp" />
+
+        <RadioButton
+            android:id="@+id/rbmul"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:fontFamily="monospace"
+            android:text="@string/mul"
+            android:textSize="18sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/msgtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginEnd="177dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/dash"
+        android:textAlignment="center"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/answertextfield" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

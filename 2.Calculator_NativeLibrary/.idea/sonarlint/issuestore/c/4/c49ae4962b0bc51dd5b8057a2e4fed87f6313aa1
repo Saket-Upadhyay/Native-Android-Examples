@@ -1,0 +1,6 @@
+
+m	java:S117@"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÖÝ¥ú8©Ùä¯Ì.
+m
+java:S1128"PRemove this unused import 'android.os.strictmode.IntentReceiverLeakedViolation'.(ºµžé8ü¢ò¯Ì.
+T
+java:S1128 "7Remove this unused import 'android.widget.RadioButton'.(®éŽ«8²ž˜¯Ì.
