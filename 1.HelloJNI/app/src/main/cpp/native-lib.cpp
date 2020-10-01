@@ -25,7 +25,9 @@
 extern "C" JNIEXPORT jstring JNICALL
 Java_com_x64m_hellojni_MainActivity_stringFromJNI(
         JNIEnv* env, //default env parameter.
-        jobject /* this, activity context. */) {
+        jobject /* this, activity context. */)
+
+        {
     std::string hello = "Hi! This text is coming in hot from the Native Library!! Wanna see the License? Here you go ...\n--------------------------------\nMIT License\n"
                         "\n"
                         "Copyright (c) 2020 Saket Upadhyay\n"

@@ -39,8 +39,7 @@ extern "C" JNIEXPORT jstring JNICALL
 Java_com_x64m_xsfmnative_MainActivity_jniADD(JNIEnv* env, jobject MainObj,
                                              jstring x, jstring y)
 {
-    // atoi() converts char* to int
-    //GetStringUTFChars convert jstring to char*
+
 
     auto sum=(atoi(env->GetStringUTFChars(x,0))) + (atoi(env->GetStringUTFChars(y,0)));
 
