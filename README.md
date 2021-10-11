@@ -1,4 +1,6 @@
 # Native Android Examples
+[हिन्दी में पढ़ने के लिए यहाँ क्लिक करें](https://github.com/Saket-Upadhyay/Native-Android-Examples/blob/master/Readme_HI.md)
+
 Basic Android Native Library Examples for Beginners (JNI via C++ Libraries)
 
 ### Contents
